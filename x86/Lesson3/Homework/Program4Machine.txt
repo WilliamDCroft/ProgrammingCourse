@@ -1,0 +1,12 @@
+Move constant to ah, 4
+10110100 00000100
+Move constant to al, 1
+10110000 00000001
+Move constant to ebx, 3
+10111011 00000011 00000000 00000000 00000000
+Add 32 bit register to 32 bit register, ebx to eax
+00000001 11000011
+Move 8 bit register to 8 bit register, ch, bh
+10001000 11101111
+Move 8 bit register to 8 bit register, dl, bh
+10001000 11010111

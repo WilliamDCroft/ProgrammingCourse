@@ -1,0 +1,7 @@
+mov ax, 1
+mov dx, 2
+add ax, dx
+add dx, 5
+mov bx, 4
+sub dx, bx
+sub dx, 1

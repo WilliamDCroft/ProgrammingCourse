@@ -1,0 +1,4 @@
+mov ax, 1
+mov dx, 2
+mov ax, 3
+mov bx, 4
