@@ -36,9 +36,10 @@ _start:
     ; userGuess    word [rbp - 3]
     ; guessCount   byte [rbp - 4]
 
+attemptRand:
     ; To start with, get a random number from 1 to 6 and store it.
     rdrand eax
-    jnc _start
+    jnc attemptRand
 
     mov ebx, 6
     xor edx, edx
@@ -54,6 +55,8 @@ _start:
     mov rsi, guessMessage
     mov rdx, guessMessageLength
     syscall
+
+    mov byte [rbp - 4], 0; guessCount
 
 gameLoop:
     inc byte [rbp - 4]
