@@ -28,9 +28,11 @@ and macOS — including Objective-C instruction for Mac-specific topics.
 My course follows the outline below Staring from lesson3, all code examples used for the lesson and all answers to the homework are included. This repo is being updated as I attempt to upload everything. The below lessons are not comprehensive of the course and only outline what has currently been uploaded.
 
 Pre-Circuit
+
 Lesson0: Basic Primer on Electricity
 
 Hardware Crash Course
+
 Lesson1: Basic primer on: Transistors, logic gates, adders, binary
 
 Lesson2: Basic primer on: the command line
@@ -38,6 +40,7 @@ Lesson2: Basic primer on: the command line
 Lesson3: Basic primer on: x86 Architecture
 
 Assembly
+
 Lesson4: Process Memory Layout and the Code Segment
 
 Lesson5: The Data Segment
