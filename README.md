@@ -32,18 +32,28 @@ Lesson0: Basic Primer on Electricity
 
 Hardware Crash Course
 Lesson1: Basic primer on: Transistors, logic gates, adders, binary
+
 Lesson2: Basic primer on: the command line
+
 Lesson3: Basic primer on: x86 Architecture
 
 Assembly
 Lesson4: Process Memory Layout and the Code Segment
+
 Lesson5: The Data Segment
+
 Lesson6: The BSS Segment
+
 Lesson7: Comparisons and Jump
+
 Lesson8: Basic Random Number Generation
+
 Lesson9: The Stack Segment
+
 Lesson10: Context Frames
+
 Lesson11: Functions (Callable Units)
+
 Lesson12: Libraries
 
 
