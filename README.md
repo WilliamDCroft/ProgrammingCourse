@@ -25,8 +25,27 @@ The course is cross-platform throughout, covering Windows (WSL), Linux,
 and macOS — including Objective-C instruction for Mac-specific topics.
 
 ## What's in this repo
+My course follows the outline below Staring from lesson3, all code examples used for the lesson and all answers to the homework are included. This repo is being updated as I attempt to upload everything. The below lessons are not comprehensive of the course and only outline what has currently been uploaded.
 
-The code for the lessons and homework for my course.
+Pre-Circuit
+Lesson0: Basic Primer on Electricity
+
+Hardware Crash Course
+Lesson1: Basic primer on: Transistors, logic gates, adders, binary
+Lesson2: Basic primer on: the command line
+Lesson3: Basic primer on: x86 Architecture
+
+Assembly
+Lesson4: Process Memory Layout and the Code Segment
+Lesson5: The Data Segment
+Lesson6: The BSS Segment
+Lesson7: Comparisons and Jump
+Lesson8: Basic Random Number Generation
+Lesson9: The Stack Segment
+Lesson10: Context Frames
+Lesson11: Functions (Callable Units)
+Lesson12: Libraries
+
 
 ## About
 

@@ -135,10 +135,29 @@ secure_itoa:
     mov ebp, esp
     push ebx
     push edi
+    push esi
+
+    mov edi, dword [ebp + 12] ; str
+    mov esi, dword [ebp + 16] ; n
+
+    ; Return immediately if buffer size n <= 1 (no space for digits + null terminator)
+    cmp esi, 0
+    jle secItoaExitEarly
+
+    cmp esi, 1
+    je secItoaLoopTwoEnd
 
     mov eax, dword [ebp + 8]; value
     mov ecx, 0
     mov ebx, 10
+
+    ; if value is 0, handle this special case
+    cmp eax, 0
+    jne secItoaLoopOne
+    push 0
+    inc ecx
+    jmp secItoaLoopOneEnd
+
 secItoaLoopOne:
     cmp eax, 0
     je secItoaLoopOneEnd
@@ -151,23 +170,28 @@ secItoaLoopOne:
     jmp secItoaLoopOne
 
 secItoaLoopOneEnd:
+    dec esi
 
-    mov ebx, dword [ebp + 16]; n
-    mov edi, dword [ebp + 12]; str
 secItoaLoopTwo:
-    dec ebx
-    cmp ebx, 0
-    jle secItoaLoopTwoExit
-
+    cmp ecx, 0
+    jle secItoaLoopTwoEnd
     pop eax
+    dec ecx
+
+    cmp esi, 0
+    jle secItoaLoopTwo
+
     add al, '0'
     mov byte [edi], al
     inc edi
-    loop secItoaLoopTwo
+    dec esi
+    jmp secItoaLoopTwo
 
-secItoaLoopTwoExit:
+secItoaLoopTwoEnd:
     mov byte [edi], 0
 
+secItoaExitEarly:
+    pop esi
     pop edi
     pop ebx
     mov esp, ebp
