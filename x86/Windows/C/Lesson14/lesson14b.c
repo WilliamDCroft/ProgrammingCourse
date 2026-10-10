@@ -1,4 +1,4 @@
-extern int prinft();
+extern int printf();
 
 int x = 3;
 static int y;
