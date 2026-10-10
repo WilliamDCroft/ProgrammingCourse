@@ -67,6 +67,8 @@ Lesson13: The C Runtime Library
 
 Lesson14: Storage Segments Usage In C
 
+Lesson15: User Input and Output in C
+
 ## About
 
 Full course outline available on request. I'm a Senior Application
