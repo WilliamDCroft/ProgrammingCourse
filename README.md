@@ -46,6 +46,13 @@ Lesson10: Context Frames
 Lesson11: Functions (Callable Units)
 Lesson12: Libraries
 
+Basic Introduction To Windows Assembly
+
+The C Programming Language
+
+Lesson13: The C Runtime Library
+
+Lesson14: Storage Segments Usage In C
 
 ## About
 

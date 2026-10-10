@@ -1,0 +1,13 @@
+LOC    OP1     R    A      B      C      OP2     D
+----   ----    -   ----   ----   ----   ----    ----
+0200   ADD     0   0100   0101   0102   NOOP    0000     ; 2.0 + 3.0 -> 0102
+0201   WRTPJ   0   0102   0102   0000   TR      0203     ; write/print the result cell
+0202   NOOP    0   0000   0000   0000   NOOP    0000     ; (padding / safety)
+0203   STOP    0   0000   0000   0000   —       0000     ; halt
+
+
+Every Speedcoding instruction occupied one 72-bit word and always contained both an OP1 (arithmetic or I/O, three addresses) and an OP2 (logical/control, one address).
+Numerical operation codes also existed (ADD was 658, for example), but programmers normally wrote the alphabetic mnemonics on coding sheets.
+Address modification (via the R-code and index registers RA/RB/RC) and the address counter were powerful features, but they are deliberately omitted here for a minimal example.
+Real programs almost always began with loading constants and data from cards or tape; the fragment above assumes those cells are already prepared.
+Execution was interpretive and roughly 10–20× slower than hand-coded 701 machine language, which was the accepted trade-off for the greatly improved ease of programming.

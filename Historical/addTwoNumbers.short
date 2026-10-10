@@ -1,0 +1,7 @@
+0000X30309X1
+07Y10204X1Y1
+
+X3 = ( X1 + Y1 ) / X1 * Y1          substitute variables
+X3 03 09 X1 07 Y1 02 04 X1 Y1       substitute operators
+
+12 digits per line, start with the end pad with zeros to the front

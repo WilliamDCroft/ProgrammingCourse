@@ -174,3 +174,5 @@ secItoaExit:
     pop rbp
 
     ret
+
+segment .note.GNU-stack noexec; added for C linkage

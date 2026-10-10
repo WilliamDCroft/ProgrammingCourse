@@ -1,0 +1,8 @@
+GET "LIBHDR"
+LET START() BE
+$( LET A, B, SUM = 2, 3, 0
+   SUM := A + B
+   WRITES("Sum is ")
+   WRITEN(SUM)
+   WRITES("*N")
+$)
