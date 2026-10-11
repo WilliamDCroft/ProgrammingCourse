@@ -9,7 +9,7 @@ _start:
     mov eax, 4
     mov ebx, 1
     mov ecx, message
-    mov edx, 12
+    mov edx, 16
     int 128
  
     mov eax, 1

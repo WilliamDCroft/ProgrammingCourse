@@ -35,6 +35,7 @@ main:
     xor rax, rax
     call printf wrt ..plt
 
+    xor rax, rax
     mov rsp, rbp
     pop rbp
     ret
