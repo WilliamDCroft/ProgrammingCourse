@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float floatOne = 3.14;
-    float floatTwo = 17.24;
+    float floatOne = 3.14f;
+    float floatTwo = 17.24f;
     float resultOne = floatOne + floatTwo;
     printf("%f\n", resultOne);
     double doubleOne = floatTwo;

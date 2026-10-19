@@ -31,6 +31,8 @@ Pre-Circuit
 
 Lesson0: Basic Primer on Electricity
 
+
+
 Hardware Crash Course
 
 Lesson1: Basic primer on: Transistors, logic gates, adders, binary
@@ -38,6 +40,8 @@ Lesson1: Basic primer on: Transistors, logic gates, adders, binary
 Lesson2: Basic primer on: the command line
 
 Lesson3: Basic primer on: x86 Architecture
+
+
 
 Assembly
 
@@ -61,6 +65,9 @@ Lesson12: Libraries
 
 Basic Introduction To Windows Assembly
 
+
+
+
 The C Programming Language
 
 Lesson13: The C Runtime Library
@@ -68,6 +75,8 @@ Lesson13: The C Runtime Library
 Lesson14: Storage Segments Usage In C
 
 Lesson15: User Input and Output in C
+
+Lesson16: Fixed and Floating Point Numbers
 
 ## About
 
