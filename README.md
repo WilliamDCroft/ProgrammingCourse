@@ -78,6 +78,8 @@ Lesson15: User Input and Output in C
 
 Lesson16: Fixed and Floating Point Numbers
 
+Lesson17: Conditional Statements in C
+
 ## About
 
 Full course outline available on request. I'm a Senior Application
