@@ -12,7 +12,7 @@ segment .data
                        db "Press 2 for appointment reminders.", 10
                        db "Press 3 for a positive message", 10
                        db "$> ", 0
-    weatherMessage     db "The weather is currently tornado levels od scary!", 10, 0
+    weatherMessage     db "The weather is currently tornado levels of scary!", 10, 0
     appointmentMessage db "You have a doctors appointment on the 17th.", 10, 0
     positiveMessage    db "You are a good person. Have a pleasent day.", 10, 0
 
