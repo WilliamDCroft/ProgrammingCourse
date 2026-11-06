@@ -80,6 +80,10 @@ Lesson16: Fixed and Floating Point Numbers
 
 Lesson17: Conditional Statements in C
 
+Lesson18: Else, Else-If, and While
+
+Lesson19: Do-While and For Loops
+
 ## About
 
 Full course outline available on request. I'm a Senior Application
