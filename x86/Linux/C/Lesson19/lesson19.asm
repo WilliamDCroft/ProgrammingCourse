@@ -1,4 +1,4 @@
-extern printf: proc
+extern printf
 
 global main
 
