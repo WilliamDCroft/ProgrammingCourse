@@ -1,0 +1,4 @@
+movz x0, #1
+movz x3, #2
+movz x0, #3
+movz x1, #4

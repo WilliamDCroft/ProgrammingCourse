@@ -1,0 +1,7 @@
+movz x0, #1
+movz x3, #2
+add x0, x0, x3
+add x3, x3, #5
+movz x1, #4
+sub x3, x3, x1
+sub x3, x3, #1
