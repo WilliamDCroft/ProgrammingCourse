@@ -6,12 +6,17 @@
 .global _start
 
 .data
-    output: .byte 0, 10
+    output: .skip 2
     .equ outputLength, . - output
 
 .text
 
 _start:
+    adrp x0, output
+    add  x0, x0, :lo12:output
+    add  x0, x0, #1
+    mov  w1, #10
+    strb w1, [x0]
 
     mov  x3, 0 // count
 loopOne:
