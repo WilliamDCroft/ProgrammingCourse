@@ -25,7 +25,7 @@ The course is cross-platform throughout, covering Windows (WSL), Linux,
 and macOS — including Objective-C instruction for Mac-specific topics.
 
 ## What's in this repo
-My course follows the outline below Staring from lesson3, all code examples used for the lesson and all answers to the homework are included. This repo is being updated as I attempt to upload everything. The below lessons are not comprehensive of the course and only outline what has currently been uploaded.
+My course follows the outline below. Staring from lesson3, all code examples used for the lesson and all answers to the homework are included. This repo is being updated as I attempt to upload everything. The below lessons are not comprehensive of the course and only outline what has currently been uploaded.
 
 Pre-Circuit
 
@@ -83,6 +83,8 @@ Lesson17: Conditional Statements in C
 Lesson18: Else, Else-If, and While
 
 Lesson19: Do-While and For Loops
+
+Lesson20: Switch Tables
 
 ## About
 

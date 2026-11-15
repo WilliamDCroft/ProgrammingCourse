@@ -69,7 +69,6 @@ mainLoop:
     mov  x8, #SYS_READ
     svc  #0
 
-
     adrp x0, userGuess
     add  x0, x0, :lo12:userGuess
     ldrb w0, [x0]
@@ -110,3 +109,7 @@ tooHigh:
     svc  #0
 
     b mainLoop
+
+// assmebly instructions
+// as -o lesson8.o lesson8.asm
+// ld.lld -pie -o lesson8 lesson8.o
