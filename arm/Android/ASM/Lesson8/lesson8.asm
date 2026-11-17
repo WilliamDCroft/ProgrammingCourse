@@ -110,6 +110,6 @@ tooHigh:
 
     b mainLoop
 
-// assmebly instructions
+// assembly instructions
 // as -o lesson8.o lesson8.asm
 // ld.lld -pie -o lesson8 lesson8.o

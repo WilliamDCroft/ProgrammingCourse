@@ -47,6 +47,6 @@ exit:
     mov  x8, #SYS_EXIT
     svc  #0
 
-// assmebly instructions
+// assembly instructions
 // as -o lesson7.o lesson7.asm
 // ld.lld -pie -o lesson7 lesson7.o

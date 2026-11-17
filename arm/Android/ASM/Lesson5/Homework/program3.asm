@@ -27,6 +27,6 @@ _start:
     mov x8, 93
     svc #0
 
-// assmebly instructions
+// assembly instructions
 // as -o program3.o program3.asm
 // ld.lld -pie -o program3 program3.o

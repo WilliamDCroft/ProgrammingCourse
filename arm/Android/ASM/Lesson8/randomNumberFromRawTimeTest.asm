@@ -50,6 +50,6 @@ _start:
     mov  x8, #SYS_EXIT
     svc  #0
 
-// assmebly instructions
+// assembly instructions
 // as -o randomNumberFromRawTimeTest.o randomNumberFromRawTimeTest.asm
 // ld.lld -pie -o randomNumberFromRawTimeTest randomNumberFromRawTimeTest.o

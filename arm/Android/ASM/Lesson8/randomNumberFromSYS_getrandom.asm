@@ -52,6 +52,6 @@ _start:
     mov  x8, #SYS_EXIT
     svc  #0
 
-// assmebly instructions
+// assembly instructions
 // as -o randomNumberFromSYS_getrandom.o randomNumberFromSYS_getrandom.asm
 // ld.lld -pie -o randomNumberFromSYS_getrandom randomNumberFromSYS_getrandom.o

@@ -18,6 +18,6 @@ _start:
     mov x8, #93 // SYS_EXIT
     svc #0
 
-// assmebly instructions
+// assembly instructions
 // as -o lesson5.o lesson5.asm
 // ld.lld -pie -o lesson5 lesson5.o

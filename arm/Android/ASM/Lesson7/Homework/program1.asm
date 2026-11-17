@@ -90,6 +90,6 @@ exit:
     mov  x8, #SYS_EXIT
     svc  #0
 
-// assmebly instructions
+// assembly instructions
 // as -o program1.o program1.asm
 // ld.lld -pie -o program1 program1.o
