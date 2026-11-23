@@ -1,0 +1,13 @@
+.global puts
+.type puts, %function
+
+Registers	Alias	  Role                                           	                        Preserved Across Calls?
+x0 – x7	    —	      Arguments 1–8; x0 (and x1) hold return values	                           No (Caller-saved / Volatile)
+x8	        xr	      Indirect result location (struct return pointer) & Linux syscall number  No (Caller-saved)
+x9 – x15	—	      General temporary / scratch registers	                                   No (Caller-saved)
+x16, x17	ip0, ip1  Intra-procedure call scratch registers (used by linker PLT veneers)	   No (Caller-saved)
+x18	        —         Platform Register (Reserved by Android for ShadowCallStack / TLS)	       Do Not Touch
+x19 – x28	—         General-purpose preserved registers                                      Yes (Callee-saved)
+x29	        fp	      Frame Pointer                                                            Yes (Callee-saved)
+x30         lr        Link Register (holds return address written by bl)                       No* (Overwritten by bl; save on stack if calling sub-functions)
+sp          —         Stack Pointer (must stay 16-byte aligned at all times)                   Yes (Callee-saved)

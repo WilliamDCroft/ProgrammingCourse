@@ -18,13 +18,6 @@ segment .data
     tooHighMessageLength equ $ - tooHighMessage
     loseMessage db "Sorry, you are out of guesses. The number was X.", 10
     loseMessageLength equ $ - loseMessage
-   
-segment .bss
-    randomNumber resb 1
-    randomNumberLength equ $ - randomNumber
-    userGuess resb 10
-    userGuessLength equ $ - userGuess
-    guessCount resb 1
 
 segment .text
 
@@ -63,7 +56,7 @@ gameLoop:
     mov rax, SYS_READ
     mov rdi, STDIN
     lea rsi, [rbp - 3]
-    mov rdx, userGuessLength
+    mov rdx, 2
     syscall
 
     mov al, byte [rbp - 3]

@@ -23,19 +23,19 @@ main proc
     ; szOption byte ptr [rbp - 256]
     ; option   dword ptr [rbp - 260]
 
-    lea rax, MatchZero
+    lea rax, matchZero
     mov qword ptr [switchTableOne], rax
 
-    lea rax, MatchOne
+    lea rax, matchOne
     mov qword ptr [switchTableOne + 8], rax
 
-    lea rax, MatchTwo
+    lea rax, matchTwo
     mov qword ptr [switchTableOne + 16], rax
 
-    lea rax, MatchThree
+    lea rax, matchThree
     mov qword ptr [switchTableOne + 24], rax
 
-    lea rax, MatchFour
+    lea rax, matchFour
     mov qword ptr [switchTableOne + 32], rax
 
     lea rax, matchNone
@@ -87,7 +87,7 @@ matchZero:
     call fputs
     jmp switchOneEnd
 
-MatchOne:
+matchOne:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax
@@ -95,7 +95,7 @@ MatchOne:
     call fputs
     jmp switchOneEnd
 
-MatchTwo:
+matchTwo:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax
@@ -103,7 +103,7 @@ MatchTwo:
     call fputs
     jmp switchOneEnd
 
-MatchThree:
+matchThree:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax
@@ -111,7 +111,7 @@ MatchThree:
     call fputs
     jmp switchOneEnd
 
-MatchFour:
+matchFour:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax

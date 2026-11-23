@@ -30,16 +30,16 @@ main proc
     ; option   dword ptr [rbp - 260]
     ; i        dword ptr [rbp - 264]
 
-    lea rax, MatchZero
+    lea rax, matchZero
     mov qword ptr [switchTableOne], rax
 
-    lea rax, MatchOne
+    lea rax, matchOne
     mov qword ptr [switchTableOne + 8], rax
 
-    lea rax, MatchTwo
+    lea rax, matchTwo
     mov qword ptr [switchTableOne + 16], rax
 
-    lea rax, MatchThree
+    lea rax, matchThree
     mov qword ptr [switchTableOne + 24], rax
 
     lea rax, matchNone
@@ -92,7 +92,7 @@ matchZero:
     call fputs
     jmp switchOneEnd
 
-MatchOne:
+matchOne:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax
@@ -100,7 +100,7 @@ MatchOne:
     call fputs
     jmp switchOneEnd
 
-MatchTwo:
+matchTwo:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax
@@ -108,7 +108,7 @@ MatchTwo:
     call fputs
     jmp switchOneEnd
 
-MatchThree:
+matchThree:
     mov rcx, 1
     call __acrt_iob_func
     mov rdx, rax

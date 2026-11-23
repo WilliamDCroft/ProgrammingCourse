@@ -86,6 +86,10 @@ Lesson19: Do-While and For Loops
 
 Lesson20: Switch Tables
 
+Lesson21: Pointers in C
+
+Lesson22: Arrays in C
+
 ## About
 
 Full course outline available on request. I'm a Senior Application
