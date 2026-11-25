@@ -22,7 +22,7 @@ _main:
   ; x dword [rbp - 4]
 
    mov dword [rbp - 4], 3; x
-   mov eax, dword [rbp - 4]; x
+   mov eax, dword [rbp - 8]; x
    mov ebx, 4
    cmp eax, ebx
    jne elseClause

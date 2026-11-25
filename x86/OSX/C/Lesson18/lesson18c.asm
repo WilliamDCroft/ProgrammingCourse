@@ -24,7 +24,7 @@ _main:
   ; y dword [rbp - 8]
 
    mov dword [rbp - 4], 5; x
-   mov dword [rbp - 4], 5; y
+   mov dword [rbp - 8], 5; y
 
    mov eax, dword [rbp - 4]; x
    mov ebx, 4
@@ -38,7 +38,7 @@ _main:
    jmp ifChainExit
 
 elseIfClause:
-   mov eax, dword [rbp - 8]; 8
+   mov eax, dword [rbp - 8]; y
    mov ebx, 4
    cmp eax, ebx
    jne elseClause
